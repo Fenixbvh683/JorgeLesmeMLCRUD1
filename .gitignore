@@ -43,5 +43,5 @@ Thumbs.db
 .htaccess
 *.config
 node_modules/
+package-lock.json
 .vscode/
-package-lock
