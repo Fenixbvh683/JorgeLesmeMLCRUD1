@@ -5,16 +5,17 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="deleteModal<%= id %>Label">Modal title</h1>
+          <h1 class="modal-title fs-5" id="deleteModal<%= id %>Label">Usted esta por eliminar el producto <%= name %></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <div class="modal-body">
+        <div class="modal-body container">
 
-            <form action="/products/delete/<%= id %>?_method=DELETE" method="POST" style="display: inline-flex">
+            <form action="/products/delete/<%= id %>?_method=DELETE" method="POST">
                 <h4 class="my-3 text-center">Esta seguro que desea eliminar el producto <%= name %>?</h4>
+                
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="submit" class="action-button delete">Eliminalo</button>
+                <button type="submit" class="btn btn-danger">Eliminalo</button>
             </form>
 
         </div>

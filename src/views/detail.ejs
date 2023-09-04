@@ -63,13 +63,18 @@
 
 							<a href="/products/edit/<%= id %>" class="action-button edit">EDITAR PRODUCTO</a>
 						
-							<form action="/products/delete/<%= id %>?_method=DELETE" method="POST" style="display: inline-flex">
+							<!---->
+
+								<form action="/products/delete/<%= id %>?_method=DELETE" method="POST" style="display: inline-flex">
 								<button type="submit" class="action-button delete">Eliminalo</button>
-							</form>
+								</form>
+
+							
+							
 
 							
 						<!-- Button trigger modal 
-							<button type="button" class="action-button delete" data-bs-toggle="modal" data-bs-target="#deleteModal<%= id %>">
+							<button type="button" class="action-button delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
   								  Eliminar Producto
  							</button>
 							 
